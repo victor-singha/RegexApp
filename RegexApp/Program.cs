@@ -41,6 +41,8 @@ namespace RegexApp
                 bool isEmail = pattern.validateEmail(email);
                 Console.WriteLine(isEmail);
             }
+            //Call ReflectionOnPattern
+            ReflectionOnPattern.ReflectionTest();
 
 
             Console.ReadKey();
