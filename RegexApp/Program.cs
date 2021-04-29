@@ -18,7 +18,7 @@ namespace RegexApp
             bool isPasswordCorrect = pattern.validatePassword("Captain#007");
             try
             {
-                if(isFirstNameCorrect ==false)
+                if(isFirstNameCorrect == false)
                 {
                     throw new Exception("First Name Validation False.s");
                 }
