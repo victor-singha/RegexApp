@@ -16,12 +16,19 @@ namespace RegexApp
             bool isEmailCorrect = pattern.validateEmail("singh.captain@gmail.com");
             bool isMobileCorrect = pattern.validateMobile("91 3767563427");
             bool isPasswordCorrect = pattern.validatePassword("Captain#007");
-
-            Console.WriteLine(isFirstNameCorrect);
-            Console.WriteLine(isLastNameCorrect);
-            Console.WriteLine(isEmailCorrect);
-            Console.WriteLine(isMobileCorrect);
-            Console.WriteLine(isPasswordCorrect);
+            try
+            {
+                Console.WriteLine(isFirstNameCorrect);
+                Console.WriteLine(isLastNameCorrect);
+                Console.WriteLine(isEmailCorrect);
+                Console.WriteLine(isMobileCorrect);
+                Console.WriteLine(isPasswordCorrect);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            
 
             List<string> emailList = new List<string>()
             {
