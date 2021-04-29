@@ -27,6 +27,7 @@ namespace RegexAppMSTest
             Pattern pattern = new Pattern();
             bool result = pattern.validateEmail("singh.captain@gmail.com");
             Assert.AreEqual(true, result);
+            //Assert.IsTrue(result);
         }
         [TestMethod]
         public void Test_Phone()
