@@ -11,13 +11,17 @@ namespace RegexApp
         public static void Main(string[] args)
         {
             Pattern pattern = new Pattern();
-            bool isFirstNameCorrect = pattern.validateFirstName("Captain");
+            bool isFirstNameCorrect = pattern.validateFirstName("captain"); //'c' is small letter so validation returns false
             bool isLastNameCorrect = pattern.validateLastName("Singh");
             bool isEmailCorrect = pattern.validateEmail("singh.captain@gmail.com");
             bool isMobileCorrect = pattern.validateMobile("91 3767563427");
             bool isPasswordCorrect = pattern.validatePassword("Captain#007");
             try
             {
+                if(isFirstNameCorrect ==false)
+                {
+                    throw new Exception("First Name Validation False.s");
+                }
                 Console.WriteLine(isFirstNameCorrect);
                 Console.WriteLine(isLastNameCorrect);
                 Console.WriteLine(isEmailCorrect);
